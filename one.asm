@@ -6,29 +6,30 @@ mov eax, 4
 mov ebx, 1
 mov ecx, msg0
 mov edx, len0
-int 80h
+
+int 0x80
 
 mov eax, 3
 mov ebx, 2
 mov ecx, num
 mov edx, 5
-int 80h
+int 0x80
 
 mov eax, 4
 mov ebx, 1
 mov ecx, msg1
 mov edx, len1
-int 80h
+int 0x80
 
 mov eax, 4
 mov ebx, 1
 mov ecx, num,
 mov edx, 5
-int 80h
+int 0x80
 
 mov eax, 1
 mov ebx, 0
-int 80h
+int 0x80
 
 
 section .data
